@@ -16,7 +16,9 @@
 
 #include "kdbush.hpp"
 
-using Point = std::pair<double, double>;
+using Point = std::pair<std::string, std::pair<double, double> >;
+
+
 
 class Cluster {
 public:
@@ -27,6 +29,7 @@ public:
     int zoom;
     int expansionZoom;
 };
+
 
 
 class ClusterTree {
